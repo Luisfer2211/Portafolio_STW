@@ -1,0 +1,23 @@
+.skull-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.skull {
+  position: absolute;
+  width: 60px;
+  opacity: 0.1;
+  animation: drift linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-200vh) rotate(360deg);
+  }
+}

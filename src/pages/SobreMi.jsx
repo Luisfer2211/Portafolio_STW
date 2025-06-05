@@ -183,6 +183,25 @@ export default function SobreMi() {
           <p style={{ marginTop: "20px", color: "#ccc" }}>Cargando información del jugador...</p>
         )}
       </div>
+
+      <div style={{ marginTop: "60px", textAlign: "center" }}>
+  <h2 style={{ color: "#66ff66" }}>🎥 Un poco más sobre mí</h2>
+  <p style={{ marginBottom: "20px", fontStyle: "italic" }}>
+    Te invito a ver este pequeño video donde hablo sobre mí, mi camino y mis inicios en la programación.
+  </p>
+  <video
+    src="/video.mp4"
+    controls
+    style={{
+      width: "100%",
+      maxWidth: "720px",
+      borderRadius: "20px",
+      border: "4px solid #66ff66",
+      boxShadow: "0 0 20px rgba(102, 255, 102, 0.4)",
+    }}
+  />
+</div>
+
     </div>
   );
 }

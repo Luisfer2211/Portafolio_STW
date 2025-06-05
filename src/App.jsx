@@ -6,6 +6,8 @@ import ThemeTransition from "./components/ThemeTransition";
 import Landing from "./components/Landing";
 import SobreMi from "./pages/SobreMi"; // Asegúrate de crear este archivo
 import Habilidades from "./pages/Habilidades";
+import Proyectos from "./pages/Proyectos"; 
+import SkullBackground from './components/SkullBackground';
 
 function App() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -21,7 +23,10 @@ function App() {
   };
 
   return (
+    
     <Router>
+      
+      <SkullBackground />
       <div>
         <button
           onClick={toggleTheme}
@@ -49,6 +54,8 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/sobre-mi" element={<SobreMi />} />
           <Route path="/habilidades" element={<Habilidades />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          {/* Puedes agregar más rutas aquí según sea necesario */}
         </Routes>
       </div>
     </Router>
