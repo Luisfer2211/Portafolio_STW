@@ -1,0 +1,42 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition:
+   background-color 1s ease, 
+    color 0.8s ease;;
+}
+
+/* Asegura que #root y App ocupen todo */
+:root {
+  --bg-color: #882beb;
+  --text-color: #222;
+  --accent-color: #6cc24a; /* verde tipo Shrek */
+  --button-bg: var(--accent-color);
+  --button-text: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e0a2a; /* morado oscuro */
+  --text-color: #e5e5e5;
+  --accent-color: #6cc24a;
+  --button-bg: #357a38; /* verde más oscuro para botón */
+  --button-text: #fff;
+}
+
+button {
+  transition: 
+    background-color 0.8s ease, 
+    color 0.8s ease,
+    opacity 0.3s ease;
+}
