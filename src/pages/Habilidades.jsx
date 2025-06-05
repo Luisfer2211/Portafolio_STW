@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { FaReact, FaHtml5, FaJs, FaPython, FaJava, FaGitAlt, FaDocker } from "react-icons/fa";
+import { FaReact, FaHtml5, FaJs, FaPython, FaJava, FaGitAlt, FaDocker, FaCss3Alt } from "react-icons/fa";
 import { SiPostgresql, SiCplusplus } from "react-icons/si";
 
 const habilidades = [
@@ -10,6 +10,7 @@ const habilidades = [
   { nombre: "PostgreSQL", icono: <SiPostgresql color="#336791" />, porcentaje: 70 },
   { nombre: "C++", icono: <SiCplusplus color="#00599C" />, porcentaje: 55 },
   { nombre: "HTML", icono: <FaHtml5 color="#e34c26" />, porcentaje: 65 },
+  { nombre: "CSS", icono: <FaCss3Alt color="#264de4" />, porcentaje: 60 }, // ✅ Nueva habilidad
   { nombre: "JavaScript", icono: <FaJs color="#f7df1e" />, porcentaje: 75 },
   { nombre: "Docker", icono: <FaDocker color="#0db7ed" />, porcentaje: 50 },
   { nombre: "React", icono: <FaReact color="#61dafb" />, porcentaje: 60 },
