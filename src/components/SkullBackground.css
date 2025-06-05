@@ -1,23 +1,33 @@
 .skull-background {
   position: fixed;
-  inset: 0;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  z-index: 0;
   pointer-events: none;
 }
 
 .skull {
   position: absolute;
-  width: 60px;
-  opacity: 0.1;
-  animation: drift linear infinite;
+  width: 40px;
+  opacity: 0.15;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-@keyframes drift {
+@keyframes floatUp {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
   }
   100% {
-    transform: translateY(-200vh) rotate(360deg);
+    transform: translateY(-120vh);
+    opacity: 0;
   }
 }

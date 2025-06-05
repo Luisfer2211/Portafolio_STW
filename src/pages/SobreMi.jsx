@@ -47,7 +47,7 @@ export default function SobreMi() {
   };
 
   return (
-    <div style={{ padding: "40px", maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+    <div style={{ padding: "40px", maxWidth: "900px", margin: "0 auto", textAlign: "center"}}>
       <button
         onClick={volverAPrincipal}
         style={{
@@ -97,13 +97,18 @@ export default function SobreMi() {
       </div>
 
       <div
-        style={{
-          backgroundColor: "rgba(255,255,255,0.05)",
-          padding: "20px",
-          borderRadius: "12px",
-          textAlign: "justify",
-        }}
-      >
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
+            padding: "24px",
+            borderRadius: "16px",
+            textAlign: "justify",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+          }}
+        >
+
         {tab === "quien" && (
           <p>
             Me llamo <span style={{ color: "#4caf50", fontWeight: "bold" }}>Luis Fernando Palacios López</span>, pero mis amigos me llaman <strong>Luisfer</strong>. Soy una persona apasionada por la tecnología, el desarrollo de software y la innovación en el mundo digital. Actualmente curso el quinto semestre de la carrera de Ingeniería en Ciencias de la Computación y Tecnologías de la Información en la Universidad del Valle, donde he adquirido conocimientos sólidos en estructuras de datos, programación orientada a objetos, inteligencia artificial, bases de datos y sistemas distribuidos.
@@ -174,8 +179,11 @@ export default function SobreMi() {
                 borderRadius: "12px",
                 marginBottom: "10px",
                 border: "3px solid #66ff66",
+                zIndex: 1,
+                position: "relative", // Necesario para que zIndex funcione
               }}
             />
+
             <h3 style={{ color: "#66ff66" }}>{jugadorInfo.strPlayer}</h3>
             <p style={{ opacity: 0.85 }}>{jugadorInfo.strTeam || "Equipo desconocido"}</p>
           </div>
@@ -198,6 +206,8 @@ export default function SobreMi() {
       borderRadius: "20px",
       border: "4px solid #66ff66",
       boxShadow: "0 0 20px rgba(102, 255, 102, 0.4)",
+      zIndex: 1, // Asegura que el video esté por encima de otros elementos
+      position: "relative", // Necesario para que zIndex funcione
     }}
   />
 </div>
