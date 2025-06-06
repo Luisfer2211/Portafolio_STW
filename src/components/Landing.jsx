@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 import "./Landing.css";
 
 export default function Landing() {
@@ -10,7 +11,6 @@ export default function Landing() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      
       <img src="/shrek.png" alt="Shrek flota" className="shrek-img" />
       <div className="landing-wrapper">
         <div className="landing-content">
@@ -53,7 +53,25 @@ export default function Landing() {
         </motion.div>
       </div>
 
+      {/* Botones sociales */}
+      <div className="social-wrapper">
+        <a
+          href="https://www.instagram.com/tuusuario" // ← Cambia este enlace
+          className="social-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram size={24} />
+        </a>
+        <a
+          href="https://github.com/tuusuario" // ← Cambia este enlace
+          className="social-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub size={24} />
+        </a>
+      </div>
     </motion.section>
-    
   );
 }
