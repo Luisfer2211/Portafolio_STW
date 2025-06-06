@@ -56,7 +56,7 @@ export default function Landing() {
       {/* Botones sociales */}
       <div className="social-wrapper">
         <a
-          href="https://www.instagram.com/tuusuario" // ← Cambia este enlace
+          href="https://www.instagram.com/thenotoriousluisfer" 
           className="social-button"
           target="_blank"
           rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Landing() {
           <FaInstagram size={24} />
         </a>
         <a
-          href="https://github.com/tuusuario" // ← Cambia este enlace
+          href="https://github.com/Luisfer2211" // ← Cambia este enlace
           className="social-button"
           target="_blank"
           rel="noopener noreferrer"
